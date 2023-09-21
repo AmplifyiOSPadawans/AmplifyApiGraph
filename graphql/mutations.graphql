@@ -1,0 +1,49 @@
+# this is an auto generated file. This will be overwritten
+
+mutation CreateDog(
+  $input: CreateDogInput!
+  $condition: ModelDogConditionInput
+) {
+  createDog(input: $input, condition: $condition) {
+    id
+    name
+    bread
+    age
+    gender
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation UpdateDog(
+  $input: UpdateDogInput!
+  $condition: ModelDogConditionInput
+) {
+  updateDog(input: $input, condition: $condition) {
+    id
+    name
+    bread
+    age
+    gender
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation DeleteDog(
+  $input: DeleteDogInput!
+  $condition: ModelDogConditionInput
+) {
+  deleteDog(input: $input, condition: $condition) {
+    id
+    name
+    bread
+    age
+    gender
+    createdAt
+    updatedAt
+    __typename
+  }
+}

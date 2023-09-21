@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B3294C9075DEE8CD5D788A2 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BA262E1FF6A4D29CF041DCC /* amplifyconfiguration.json */; };
+		824AECFF67A40819889AFFD7 /* Dog+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8569A143E050F77D090012A7 /* Dog+Schema.swift */; };
+		99D5316F9961A71ADA3472A7 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67201BABBBFECA2E4DDBB63 /* AmplifyModels.swift */; };
+		A50CCFB33AFF84212E770968 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E5235547669F559FC9A165 /* Dog.swift */; };
+		AAD92A10BF5D5948E0BE5A6E /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CE07FA4B76457B44DE29BBF /* awsconfiguration.json */; };
 		CA709C382ABBA904008DAB80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA709C372ABBA904008DAB80 /* AppDelegate.swift */; };
 		CA709C3A2ABBA904008DAB80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA709C392ABBA904008DAB80 /* SceneDelegate.swift */; };
 		CA709C3C2ABBA904008DAB80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA709C3B2ABBA904008DAB80 /* ViewController.swift */; };
 		CA709C3F2ABBA904008DAB80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA709C3D2ABBA904008DAB80 /* Main.storyboard */; };
 		CA709C412ABBA907008DAB80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA709C402ABBA907008DAB80 /* Assets.xcassets */; };
 		CA709C442ABBA907008DAB80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA709C422ABBA907008DAB80 /* LaunchScreen.storyboard */; };
+		CA709C4D2ABBAC6C008DAB80 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = CA709C4C2ABBAC6C008DAB80 /* AWSAPIPlugin */; };
+		CA709C4F2ABBAC6C008DAB80 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = CA709C4E2ABBAC6C008DAB80 /* Amplify */; };
+		CA709C512ABBB1F9008DAB80 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA709C502ABBB1F9008DAB80 /* ApiHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BA262E1FF6A4D29CF041DCC /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		6CE07FA4B76457B44DE29BBF /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		8569A143E050F77D090012A7 /* Dog+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Dog+Schema.swift"; path = "amplify/generated/models/Dog+Schema.swift"; sourceTree = "<group>"; };
 		CA709C342ABBA904008DAB80 /* AmplifyApiGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmplifyApiGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA709C372ABBA904008DAB80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA709C392ABBA904008DAB80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,9 @@
 		CA709C402ABBA907008DAB80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA709C432ABBA907008DAB80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA709C452ABBA907008DAB80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA709C502ABBB1F9008DAB80 /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		D6E5235547669F559FC9A165 /* Dog.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Dog.swift; path = amplify/generated/models/Dog.swift; sourceTree = "<group>"; };
+		E67201BABBBFECA2E4DDBB63 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA709C4D2ABBAC6C008DAB80 /* AWSAPIPlugin in Frameworks */,
+				CA709C4F2ABBAC6C008DAB80 /* Amplify in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CB53D38D50F4AA6E3B0955D /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				6CE07FA4B76457B44DE29BBF /* awsconfiguration.json */,
+				2BA262E1FF6A4D29CF041DCC /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		3F491E251AF424DBAAFE0A3E /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				E67201BABBBFECA2E4DDBB63 /* AmplifyModels.swift */,
+				8569A143E050F77D090012A7 /* Dog+Schema.swift */,
+				D6E5235547669F559FC9A165 /* Dog.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
 		CA709C2B2ABBA904008DAB80 = {
 			isa = PBXGroup;
 			children = (
 				CA709C362ABBA904008DAB80 /* AmplifyApiGraph */,
 				CA709C352ABBA904008DAB80 /* Products */,
+				2CB53D38D50F4AA6E3B0955D /* AmplifyConfig */,
+				3F491E251AF424DBAAFE0A3E /* AmplifyModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +100,7 @@
 				CA709C402ABBA907008DAB80 /* Assets.xcassets */,
 				CA709C422ABBA907008DAB80 /* LaunchScreen.storyboard */,
 				CA709C452ABBA907008DAB80 /* Info.plist */,
+				CA709C502ABBB1F9008DAB80 /* ApiHelper.swift */,
 			);
 			path = AmplifyApiGraph;
 			sourceTree = "<group>";
@@ -83,6 +121,10 @@
 			dependencies = (
 			);
 			name = AmplifyApiGraph;
+			packageProductDependencies = (
+				CA709C4C2ABBAC6C008DAB80 /* AWSAPIPlugin */,
+				CA709C4E2ABBAC6C008DAB80 /* Amplify */,
+			);
 			productName = AmplifyApiGraph;
 			productReference = CA709C342ABBA904008DAB80 /* AmplifyApiGraph.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +153,9 @@
 				Base,
 			);
 			mainGroup = CA709C2B2ABBA904008DAB80;
+			packageReferences = (
+				CA709C4B2ABBAC6C008DAB80 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
 			productRefGroup = CA709C352ABBA904008DAB80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +173,8 @@
 				CA709C442ABBA907008DAB80 /* LaunchScreen.storyboard in Resources */,
 				CA709C412ABBA907008DAB80 /* Assets.xcassets in Resources */,
 				CA709C3F2ABBA904008DAB80 /* Main.storyboard in Resources */,
+				AAD92A10BF5D5948E0BE5A6E /* awsconfiguration.json in Resources */,
+				5B3294C9075DEE8CD5D788A2 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +188,10 @@
 				CA709C3C2ABBA904008DAB80 /* ViewController.swift in Sources */,
 				CA709C382ABBA904008DAB80 /* AppDelegate.swift in Sources */,
 				CA709C3A2ABBA904008DAB80 /* SceneDelegate.swift in Sources */,
+				99D5316F9961A71ADA3472A7 /* AmplifyModels.swift in Sources */,
+				824AECFF67A40819889AFFD7 /* Dog+Schema.swift in Sources */,
+				A50CCFB33AFF84212E770968 /* Dog.swift in Sources */,
+				CA709C512ABBB1F9008DAB80 /* ApiHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +353,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bootcampinstitute.AmplifyApiGraph;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,6 +384,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bootcampinstitute.AmplifyApiGraph;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +415,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA709C4B2ABBAC6C008DAB80 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA709C4C2ABBAC6C008DAB80 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA709C4B2ABBAC6C008DAB80 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		CA709C4E2ABBAC6C008DAB80 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA709C4B2ABBAC6C008DAB80 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA709C2C2ABBA904008DAB80 /* Project object */;
 }
